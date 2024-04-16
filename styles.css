@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900');
+
+:root {
+  --sblue: #2D2D35;
+  --youngblue: #A8B5F4;
+  --nightblue: rgba(42, 48, 52);
+  --stategrey: rgba(56, 56, 56);
+  --noir: rgba(36, 36, 36);
+  --richLavender: #9F70FD;
+  --rbl: #f6abf6;
+  --tropicalViolet: #b4b2ea;
+  --white: #FFF;
+  --black: #030637;
+  --purple: #3C0753;
+  --maroon: #720455;
+  --dark: #910A67;
+  --agakgrey: #393B48;
+  --darkblue: #2d3250;
+  --fiftyblue: #424769;
+  --bluepurple: #676f9d;
+  --krem: #f9b17a;
+  --primary-color: #212121;
+  --background-color: #111;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.sil {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.bg-dakrblue {
+  background: var(--darkblue);
+}
+
+.bg-fiftyblue {
+  background: var(--fiftyblue);
+}
+
+.bg-bluepurple {
+  background: var(--bluepurple)
+}
+
+.bg-krem {
+  background-color: var(--krem);
+}
+
+.cl-fiftyblue {
+  color: var(--fiftyblue);
+}
+
+.cl-dakrblue {
+  color: var(--darkblue);
+}
+
+.cl-bluepurple {
+  color: var(--bluepurple)
+}
+
+.cl-krem {
+  color: var(--krem);
+}
+
+.nav-session {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  ;
+}
+
+.navb {
+  overflow: hidden;
+}
+
+.nav-ul {
+  overflow: visible;
+}
+
+.hiddenNavbar {
+  opacity: 0;
+  transform: translateY(-7%);
+  transition: .3s ease;
+}
+
+.showNavbar {
+  opacity: 1;
+  transform: translateY(0);
+  transition: .3s ease;
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.icons {
+  color: var(--krem);
+}
+
+.timeline {
+  padding: 30px 20px;
+}
+
+.timeline ul {
+  list-style-type: none;
+  border-left: 2px solid var(--fiftyblue);
+  padding: 10px 5px;
+}
+
+.timeline ul li {
+  padding: 20px 20px;
+  position: relative;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.timeline ul li span {
+  display: inline-block;
+  background-color: var(--bluepurple);
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+.timeline ul li .content h3 {
+  color: var(--white);
+  font-size: 17px;
+  font-weight: 700;
+  margin: 15px 0 3px 0;
+}
+
+.timeline ul li .content p {
+  padding: 5px 0px 15px 0px;
+  font-size: 15px;
+}
+
+.timeline ul li:before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--bluepurple);
+  border-radius: 50%;
+  left: -11px;
+  top: 28px;
+  transition: .5s;
+}
+
+.timeline ul li:hover {
+  background-color: var(--fiftyblue);
+  border-radius: 10px;
+  margin: 0 0 0 3px;
+}
+
+.timeline ul li:hover:before {
+  background-color: var(--youngblue);
+  box-shadow: 0px 0px 10px 2px var(--youngblue);
+}
+
+@media (max-width:300px) {
+  .timeline {
+    width: 100%;
+    padding: 30px 5px 30px 10px;
+  }
+
+  .timeline ul li .content h3 {
+    color: var(--white);
+    font-size: 15px;
+  }
+
+}
+
+
+.wave {
+  background: url("/wave.png") no-repeat;
+  width: 100%;
+  z-index: 999;
+  height: 160px;
+  position: absolute;
+  bottom: 0;
+}
+
+.wave:nth-child(2) {
+  background-position-x: 96%;
+}
+
+@media (max-width: 792px) {
+  .wave {
+    background-position-x: 43%;
+  }
+
+  .wave:nth-child(2) {
+    background-position-x: 39%;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+.whatsapp-bottom {
+  background: #3EC079;
+  border-radius: 100%;
+  padding: 13px;
+}
+
+.animate__animated {
+  opacity: 0;
+}
+
+img {
+  -webkit-user-drag: none;
+}
